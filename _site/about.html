@@ -42,7 +42,8 @@
         <h2> Meet our growing team </h2>   
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
     </div>
-    <div class="col-7_sm-10 bg-image bg-plant"></div>
+    <!-- if we want client to be able to change the bg-img we need to add instyle for the bg-img -->
+    <div class="col-7_sm-10 bg-image bg-plant" style=" background-image: url('/images/plant.jpg');"></div>
 </section> 
 
 
@@ -93,12 +94,13 @@
     </div>  
 </section>
 
-<section class="padded bg-green">
-    <h2> Watch our meet the team video</h2>
-    <p> Youpi lala dou </p>
-
-    <div class='embed-container'><iframe src='https://www.youtube.com/embed/undefined' frameborder='0' allowfullscreen></iframe></div>
-
+<section class="padded bg-green center">
+    <h2 class="editable">Watch our corny meet the team video</h2>
+ 	<p class="emphasis editable">Featuring the j-bomb the terrier</p>
+    <div class="padded-1"> 
+        <!-- can't add padding on the below div othwerwise it will mess with the responsiveness -->
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/undefined' frameborder='0' allowfullscreen></iframe></div>
+    </div>
 </section>
 
 

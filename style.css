@@ -119,6 +119,11 @@ a:hover { color: #a2745c; }
     font-size: 0.9rem;
 }
 
+.emphasis {
+    font-size: 1.1rem;
+    font-weight:400;
+}
+
 
 /* Header & Footer  */
 header {
