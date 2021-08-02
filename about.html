@@ -1,0 +1,59 @@
+---
+layout: default
+team:
+ - name: Darryl
+   bio: AKA big boss
+   description: here goes a little description about the team member. Bla bla bla
+   profile_image: /images/profile-1.jpeg
+ - name: The dud
+   bio: AKA the planner
+   description: here goes a little description about the team member
+   profile_image: /images/profile-2.jpeg
+ - name: Missy
+   bio: AKA the get it done chick
+   description: here goes a little description about the team member
+   profile_image: /images/profile-3.jpeg
+about-video-id: 
+---
+
+<!-- Banner section -->
+<section class="tall-60 grid bg-green">
+    <div class="col-5_sm-10-middle padded editable ">
+        <h2> Meet our growing team </h2>   
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+    </div>
+    <div class="col-7_sm-10 bg-image bg-plant"></div>
+</section> 
+
+
+<!-- team section -->
+
+<section class="padded">
+    <!-- better to create extra div when using capped-width classes in case you want ot apply a bg img to your section -->
+    <div class="capped-width-narrow">
+
+        {% for person in page.team %}
+        <!-- using grid below so can flip it more easily later -->
+        <div class="grid flex-flip-alternate">
+            <div class="col-5 padded-2">
+                <img src="{{ person.profile_image }}" class="profile-image"> 
+            </div>
+            <div class="col-7-middle padded-1">
+                <h3> Meet {{ person.name }} </h3>
+                <p> <strong> {{ person.bio }} </p>
+                <p> {{ person.description }} </p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>  
+</section>
+
+<section class="padded bg-green">
+    <h2> Watch our meet the team video</h2>
+    <p> Youpi lala dou </p>
+
+    <div class='embed-container'><iframe src='https://www.youtube.com/embed/undefined' frameborder='0' allowfullscreen></iframe></div>
+
+</section>
+
