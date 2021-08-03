@@ -35,6 +35,9 @@ html {
 .padded-b-0 { padding-bottom: 0; }
 .margin-b-0 { margin-bottom: 0; }
 
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+
 .bg-rust  { background-color: #d3b4a2; }
 .bg-green { background-color: #9b9b81; }
 .bg-dark  { background-color: #a2745c; }
@@ -130,6 +133,10 @@ header {
     padding: 2% 5%;
 }
 
+header a {
+    text-decoration: none;
+}
+
 footer a:hover { 
     color: #d3b4a2; 
 }
@@ -167,10 +174,21 @@ footer a:hover {
     background-image: url('/images/mockup.jpg');
 }
 
-.profile-image {
-    border-radius: 100%;
+.profile-image { border-radius: 100%;}
+
+.landscape     { padding-bottom: 60%;}
+
+
+/* NEWSLETTER */
+
+/* Newsletter Include */
+.right-arrow {
+	max-width: 2rem;
+	margin-left: 1rem;
+	margin-top: 0.2rem;
 }
 
+/* RESPONSIVE */
 
 /* SM - max-width in pixels approximately 768px */
 @media(max-width: 48em) {
