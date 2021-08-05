@@ -42,7 +42,7 @@ about-video-id:
             </div>
             <div class="col-7-middle padded-1">
                 <h3> Meet {{ person.name }} </h3>
-                <p> <strong> {{ person.bio }} </p>
+                <p> <strong> {{ person.bio }} </strong> </p>
                 <p> {{ person.description }} </p>
             </div>
         </div>
@@ -56,7 +56,7 @@ about-video-id:
  	<p class="emphasis editable">Featuring the j-bomb the terrier</p>
     <div class="padded-1"> 
         <!-- can't add padding on the below div othwerwise it will mess with the responsiveness -->
-        <div class='embed-container'><iframe src='https://www.youtube.com/embed/undefined' frameborder='0' allowfullscreen></iframe></div>
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{page.about-video-id}}' frameborder='0' allowfullscreen></iframe></div>
     </div>
 </section>
 
